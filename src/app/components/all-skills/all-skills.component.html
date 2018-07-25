@@ -1,0 +1,42 @@
+<div class=" uk-padding">
+
+
+  <table class="uk-table uk-table-striped">
+    <thead>
+
+    <tr>
+        <th>$key</th>
+        <th>name</th>
+        <th>phone</th>
+        <th>skill</th>
+        <th>province</th>
+        <th>price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of itemArray">
+        <td>{{item.$key}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.phone}}</td>
+        <td>{{item.skill}}</td>
+        <td>{{item.city}}</td>
+        <td>{{item.price}}</td>
+        <td>
+            <button class="uk-button uk-button-default uk-margin-small-right" type="button"
+                    routerLink="/details/{{ item.$key }}">more info
+            </button>
+        </td>
+    </tr>
+
+
+    </tbody>
+  </table>
+
+</div>
+
+
+
+
+
+
+

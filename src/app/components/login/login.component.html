@@ -1,0 +1,17 @@
+<div class="uk-card uk-card-default uk-card-body">
+    <h3 class="uk-card-title">الدخول</h3>
+    <fieldset class="uk-fieldset">
+
+
+        <div class="uk-margin">
+            <input class="uk-input" type="email" name="email" placeholder="البريد" [(ngModel)]="email">
+        </div>
+
+        <div class="uk-margin">
+            <input class="uk-input" type="password" name="password" placeholder="الرقم السرى" [(ngModel)]="password">
+        </div>
+
+
+        <button class="uk-button uk-button-primary" (click)="onLogin()">دخول</button>
+    </fieldset>
+</div>
